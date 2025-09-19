@@ -1,12 +1,12 @@
 ------------------------------------------------------------------
 |                                                                |
-| Título:         Hacer la compra en la Sirena                   |
-| Descripción:    No olvidar comprar las habichuelas             |
+| Título:         Aprender a bailar bachata                      |
+| Descripción:    Pegaito                                        |
 | ID:             6                                              |
-| Fecha límite:   16/9/2025                                      |
-| Prioridad:      Media                                          |
+| Fecha límite:   26/12/2026                                     |
+| Prioridad:      Baja                                           |
 | Categoría:      Personal                                       |
-| Responsable:    Ramon Tolentino                                |
-| Estado:         Vencida                                        |
+| Responsable:    Margarita Sedeño                               |
+| Estado:         En proceso                                     |
 |                                                                |
 ------------------------------------------------------------------

@@ -2,7 +2,7 @@ import os
 from datetime import date,datetime
 from datosTareas import pedirFechaDeVencimiento, pedirPrioridad
 import time
-from animaciones import animacionAgregandoTarea
+from animaciones import animacionDeCarga
 from colorama import Fore,Style
 ly = Fore.LIGHTYELLOW_EX
 sb = Style.BRIGHT
@@ -44,7 +44,7 @@ def agregarTarea():
             id += 1 # Si el archivo Tarea_1..2..3.. existe, aumenta +1 ID
             continue
         break
-    animacionAgregandoTarea()
+    animacionDeCarga("Agregando tarea"," .")
     print("\nTarea agregada exitosamente.")
     print(f"\n{sb}{ly}{'':*^50}{sr}")
     continuar = input("\nPresione una tecla para continuar.")

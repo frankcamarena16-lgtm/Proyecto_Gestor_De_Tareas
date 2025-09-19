@@ -3,6 +3,7 @@ from funcionesPanel import cantidadTareasCompletas,cantidadTareasEnProceso,\
                            cantidadTareasVencidas,cantidadTotalDeTareas
 import time
 from colorDeEstado import colorEstado
+from animaciones import animacionDeCarga
 from colorama import Fore,Style
 
 sb = Style.BRIGHT
@@ -244,8 +245,7 @@ def eliminarTarea():
             while True:
                 r = input("¿Seguro que quieres eliminar ésta tarea (si/no):\n> ").lower().replace("sí","si")
                 if r == "si":
-                    print("Eliminando...")
-                    time.sleep(1)
+                    animacionDeCarga("Eliminando"," ✖ ")
                     os.remove(f"Tarea_{idEliminarTarea}.txt")
                     print("Tarea eliminada.")
                     continuar = input("Presiona una tecla para continuar.")

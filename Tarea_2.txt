@@ -1,0 +1,12 @@
+------------------------------------------------------------------
+|                                                                |
+| Título:         Subir el proyecto final GitHub                 |
+| Descripción:    Usando Git                                     |
+| ID:             2                                              |
+| Fecha límite:   27/9/2025                                      |
+| Prioridad:      Alta                                           |
+| Categoría:      Educacion                                      |
+| Responsable:    Frank Camarena                                 |
+| Estado:         En proceso                                     |
+|                                                                |
+------------------------------------------------------------------

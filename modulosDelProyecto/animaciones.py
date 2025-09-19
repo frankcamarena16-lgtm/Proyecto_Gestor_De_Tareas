@@ -24,7 +24,7 @@ def animacionCargaAplicacion():
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
-    time.sleep(2)
+    time.sleep(0.5)
     os.system("clear")
     print("---------------------------------------------------------")
     print(f"|{' ':^55}|")
@@ -95,7 +95,7 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
@@ -114,12 +114,12 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
-    time.sleep(1.5)
+    time.sleep(1)
     os.system("clear")
     print("---------------------------------------------------------")
     print(f"|{' ':^55}|")
@@ -133,8 +133,8 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
@@ -153,8 +153,8 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
@@ -172,8 +172,8 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
@@ -191,8 +191,8 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
@@ -210,12 +210,12 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
-    time.sleep(2)
+    time.sleep(1)
     os.system("clear")
     print("---------------------------------------------------------")
     print(f"|{' ':^55}|")
@@ -229,8 +229,8 @@ def animacionCargaAplicacion():
     print(f"|{'Creado por:':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{sb}{'Frank Camarena':^55}|{sr}")
-    print(f"|{'Y':^55}|")
-    print(f"|{sb}{'Johanny Sánchez':^55}{sr}|")
+    print(f"|{' ':^55}|")
+    print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
@@ -239,24 +239,13 @@ def animacionCargaAplicacion():
 # ************************************ Animaciones de Carga *********************************************
 # *******************************************************************************************************
 
-def animacionPuntos():
+def animacionDeCarga(mensaje:str,caracter:str):
+    # Esta funcion 
     veces = random.randint(1,2)
 
     for v in range(veces):
-        print("\rCargando",end="")
-        for punto in range(5):
-            print(".",end="",flush=True)
-            time.sleep(0.2)
-        print("\r                   ",end="")
-
-#********************************************************************************************************
-
-def animacionAgregandoTarea():
-    veces = random.randint(1,2)
-
-    for v in range(veces):
-        print("\rAgregando la tarea",end="")
-        for punto in range(5):
-            print(".",end="",flush=True)
-            time.sleep(0.2)
-        print("\r                            ",end="")
+        print(f"\r{mensaje}",end="")
+        for c in range(4):
+            print(f"{caracter}",end="",flush=True)
+            time.sleep(0.3)
+        print("\r                                           ",end="")

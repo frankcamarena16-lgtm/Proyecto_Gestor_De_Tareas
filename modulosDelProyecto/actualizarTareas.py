@@ -5,6 +5,7 @@ from funcionesPanel import cantidadTotalDeTareas
 import time
 from colorDeEstado import colorEstado
 from colorama import Fore,Style
+from animaciones import animacionDeCarga
 
 lm = Fore.LIGHTMAGENTA_EX
 sb = Style.BRIGHT
@@ -57,8 +58,8 @@ def actualizarTarea():
 
             with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                 t.write(contenido)
-            print("Espere...")
-            time.sleep(1)
+            animacionDeCarga("Espere"," .")
+            time.sleep(0.3)
             print("\nNuevo título agregado.")
             print(f"\n{lm}{sb}{'':*^66}{sr}")
             continuar = input("\nPresione una tecla para continuar.")
@@ -80,8 +81,8 @@ def actualizarTarea():
 
             with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                 t.write(contenido)
-                print("Espere...")
-                time.sleep(1.5)
+                animacionDeCarga("Procesando"," .")
+                time.sleep(0.3)
                 print("\nNueva descripción agregada.")
                 print(f"\n{lm}{sb}{'':*^66}{sr}")
                 continuar = input("\nPresione una tecla para continuar.")
@@ -105,8 +106,8 @@ def actualizarTarea():
 
             with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                 t.write(contenido)
-            print("Cambiando...")
-            time.sleep(0.7)
+            animacionDeCarga("Cambiando"," .")
+            time.sleep(0.5)
             print("\nNueva fecha límite agregada.")
             print(f"\n{lm}{sb}{'':*^66}{sr}")
             continuar = input("\nPresione una tecla para continuar.")
@@ -135,8 +136,8 @@ def actualizarTarea():
                     contenido = "\n".join(lsLineas)
                     with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                         t.write(contenido)
-                    print("Agregando...")
-                    time.sleep(1)
+                    animacionDeCarga("Agregando"," .")
+                    time.sleep(0.2)
                     print("\nNueva prioridad agregada.")
                     print(f"\n{lm}{sb}{'':*^66}{sr}")
                     continuar = input("\nPresione una tecla para continuar.")
@@ -162,7 +163,8 @@ def actualizarTarea():
 
                         with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                             t.write(contenido)
-                        print("Agregando...")
+                        animacionDeCarga("Agregando estado"," .")
+                        time.sleep(0.4)
                         print("\nNuevo estado agregado tarea 'Completada'.")
                         print(f"\n{lm}{sb}{'':*^66}{sr}")
                         continuar = input("\nPresione una tecla para continuar.")
@@ -192,14 +194,14 @@ def actualizarTarea():
 
             with open(f"Tarea_{idTarea}.txt","w") as t:# sobreescribe la tarea con los nuevos cambios.
                 t.write(contenido)
-            print("Agregando...")
+            animacionDeCarga("Agregando"," .")
             time.sleep(1)
             print("\nNuevo responsable agregado.")
             print(f"\n{lm}{sb}{'':*^66}{sr}")
             continuar = input("\nPresione una tecla para continuar.")
 
         else:# ----------------> Sale de la función <----------------
-            print("Saliendo.")
+            animacionDeCarga("Saliendo", " .")
     else:
         print("\nNo hay tareas disponibles.\n")
         continuar = input("\nPresione una tecla para continuar.")

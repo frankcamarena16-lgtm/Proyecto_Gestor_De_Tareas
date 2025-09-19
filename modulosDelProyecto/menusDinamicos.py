@@ -2,7 +2,7 @@ import os
 from datetime import date
 import funcionesPanel as fp
 import time
-from animaciones import animacionPuntos
+from animaciones import animacionDeCarga
 from colorama import init,Fore,Style
 
 # init(autoreset=True) ---> solo se usa cuando usas Windows
@@ -152,7 +152,7 @@ def panelPrincipal():
         try:
             opcion:int = int(input("> "))
             if opcion == 1:
-                animacionPuntos() # Funcion que imprime puntos suspencivos.
+                animacionDeCarga("Cargando menú principal"," .") # Funcion que simula una carga imprimiendo un mensaje y el un caracter.
                 return opcion
             elif opcion == 2:
                 return opcion

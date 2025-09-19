@@ -4,7 +4,7 @@ from menusDinamicos import *
 from verTareas import *
 from animaciones import animacionCargaAplicacion
 
-animacionCargaAplicacion()
+#animacionCargaAplicacion()
 
 while True:   
     if panelPrincipal() == 1:# Se muestra el Panel Principal y sus opciones.
