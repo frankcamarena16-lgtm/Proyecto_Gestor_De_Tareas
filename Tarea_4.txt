@@ -1,0 +1,12 @@
+------------------------------------------------------------------
+|                                                                |
+| Título:         Lavar el carro                                 |
+| Descripción:    No rayarlo por favor                           |
+| ID:             4                                              |
+| Fecha límite:   19/9/2025                                      |
+| Prioridad:      Baja                                           |
+| Categoría:      Personal                                       |
+| Responsable:    Frank Camarena                                 |
+| Estado:         Completada                                     |
+|                                                                |
+------------------------------------------------------------------

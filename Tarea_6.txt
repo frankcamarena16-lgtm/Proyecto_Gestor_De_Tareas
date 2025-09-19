@@ -1,0 +1,12 @@
+------------------------------------------------------------------
+|                                                                |
+| Título:         Hacer la compra en la Sirena                   |
+| Descripción:    No olvidar comprar las habichuelas             |
+| ID:             6                                              |
+| Fecha límite:   16/9/2025                                      |
+| Prioridad:      Media                                          |
+| Categoría:      Personal                                       |
+| Responsable:    Ramon Tolentino                                |
+| Estado:         Vencida                                        |
+|                                                                |
+------------------------------------------------------------------

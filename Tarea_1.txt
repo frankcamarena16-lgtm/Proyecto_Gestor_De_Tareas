@@ -1,0 +1,12 @@
+------------------------------------------------------------------
+|                                                                |
+| Título:         Barrer las hojas del patio                     |
+| Descripción:    Usar la escoba vieja                           |
+| ID:             1                                              |
+| Fecha límite:   12/9/2025                                      |
+| Prioridad:      Media                                          |
+| Categoría:      Mantenimiento                                  |
+| Responsable:    Marlon Frank                                   |
+| Estado:         Vencida                                        |
+|                                                                |
+------------------------------------------------------------------

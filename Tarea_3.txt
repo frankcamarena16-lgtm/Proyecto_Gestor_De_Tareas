@@ -1,0 +1,12 @@
+------------------------------------------------------------------
+|                                                                |
+| Título:         Presentar el proyecto final                    |
+| Descripción:    Expresar el codigo de manera clara             |
+| ID:             3                                              |
+| Fecha límite:   18/9/2025                                      |
+| Prioridad:      Alta                                           |
+| Categoría:      Educacion                                      |
+| Responsable:    Johanny Sanchez                                |
+| Estado:         Completada                                     |
+|                                                                |
+------------------------------------------------------------------
