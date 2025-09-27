@@ -1,9 +1,15 @@
 import os
 import time
 import random
-from colorama import Style
+from colorama import Style,Back,Fore
 sb = Style.BRIGHT
 sr = Style.RESET_ALL
+blm = Back.LIGHTMAGENTA_EX
+blb = Back.LIGHTBLUE_EX
+lr = Fore.LIGHTRED_EX
+blr = Back.LIGHTRED_EX
+lw = Fore.LIGHTWHITE_EX
+blg = Back.LIGHTGREEN_EX
 
 def animacionCargaAplicacion():
     os.system("clear")
@@ -139,7 +145,6 @@ def animacionCargaAplicacion():
     print(f"|{' ':^55}|")
     print("---------------------------------------------------------")
     time.sleep(0.3)
-    #sdfsdfasdfas
     os.system("clear")
     print("---------------------------------------------------------")
     print(f"|{' ':^55}|")
@@ -249,3 +254,28 @@ def animacionDeCarga(mensaje:str,caracter:str):
             print(f"{caracter}",end="",flush=True)
             time.sleep(0.3)
         print("\r                                           ",end="")
+
+# *************************************** Barra de carga ************************************************
+# *******************************************************************************************************
+
+def barraDeCarga():
+    carga = 0
+    cargaTotal = 10
+    print()
+    for _ in range(cargaTotal+1):
+        barra:str = f"{sb}Cargando {lw}|{sr}"
+
+        for _ in range(carga):
+            barra += f"{blg}       {sr}"
+
+        espacios = cargaTotal-carga
+
+        for _ in range(espacios):
+            barra += "       "
+
+        barra += f"{sb}{lw}|{sr} "
+        carga += 1
+        print(f"\r{barra}",flush=True, end="")
+        velocidad = random.uniform(0.01,0.3)
+        time.sleep(velocidad)
+
